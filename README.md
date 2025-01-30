@@ -10,6 +10,10 @@ This is my portfolio website showcasing my background, skills, and interests. It
 You can view the live version of this website here:  
 🔗 [My Portfolio Website](https://amreshsharma01.github.io/my-website/)
 
+## Visual Walkthrough
+
+![Project Overview](visual%20walkthrough.png)
+
 ## Features
 - **Responsive Design:** The website is mobile-friendly and uses Bootstrap for layout and styling.
 - **SCSS Styling:** Custom SCSS is used for styling, including variables, nesting, and inheritance.
