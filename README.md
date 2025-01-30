@@ -4,7 +4,7 @@ ENGO 551 - Adv. Topics on Geospatial Technologies
 
 # Personal Website Project
 
-This is my portfolio website showcasing my background, skills, and interests. It includes five pages: Home, About Me, Interests, Contact, and Blockchain & AI.
+This is my portfolio website showcasing my background, skills, and interests. It includes four pages: Home, About Me, Interests and Blockchain & AI.
 
 ## Features
 - **Responsive Design:** The website is mobile-friendly and uses Bootstrap for layout and styling.
@@ -17,8 +17,7 @@ This is my portfolio website showcasing my background, skills, and interests. It
 1. **`index.html`:** Home page with an introduction and image.
 2. **`about.html`:** Detailed information about my background and skills.
 3. **`interests.html`:** A page about my hobbies and interests.
-4. **`contact.html`:** A contact form for visitors to reach out.
-5. **`blockchain-ai.html`:** A page comparing blockchain, cryptocurrency, and AI.
+4. **`blockchain-ai.html`:** A page comparing blockchain, cryptocurrency, and AI.
 
 ### CSS/SCSS Files
 1. **`styles.scss`:** SCSS file with variables, nesting, inheritance, and a mobile-responsive query.
