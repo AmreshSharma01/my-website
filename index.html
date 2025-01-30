@@ -4,11 +4,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Webpage</title>
+    <title>Home - Amresh Sharma</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./images/aks-title-alt.png" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
-    Hello World!
+    <!-- Centered Navigation Bar -->
+    <div class="centered-container">
+        <nav class="navbar navbar-expand-lg navbar-light custom-navbar">
+            <a class="navbar-brand" href="index.html">Amresh Sharma</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="interests.html">Interests</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blockchain-ai.html">Blockchain & AI</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container mt-5">
+        <!-- Introduction Section -->
+        <div class="row align-items-center">
+            <div class="col-md-8">
+                <h2 class="display-4">Hi, I'm Amresh</h2>
+                <p class="lead">MEng student at the University of Calgary, specializing in Geomatics Engineering.
+                    This is my last semester, and I have gained extensive knowledge in GIS technologies, including
+                    software like ArcGIS, Leaflet, and QGIS. My background in Computer Science, combined with GIS
+                    expertise, has given me a unique skill set.</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <img src="./images/aks.png" alt="Profile Image" class="profile-img img-fluid rounded-circle">
+            </div>
+
+        </div>
+
+        <!-- About Me Section -->
+        <div class="row mt-5">
+            <div class="col-md-6">
+                <img src="./images/about me.png" alt="About Me Image" class="img-fluid rounded">
+            </div>
+            <div class="col-md-6 lead">
+                <p>I am from Nepal, a country known for its greenery, mountains, lakes, and diverse culture. I love
+                    learning and testing new things, and I am passionate about investing, trading, and staying updated
+                    with the latest tech news through podcasts.</p>
+            </div>
+        </div>
+
+        <!-- Interests Section -->
+        <div class="row mt-5">
+            <div class="col-md-6">
+                <h2>Interests</h2>
+                <p>I am passionate about investing, AI, and blockchain. I follow tech trends closely.</p>
+                <a href="interests.html" class="btn btn-primary">Explore</a>
+            </div>
+            <div class="col-md-6">
+                <h2>Blockchain & AI</h2>
+                <p>Learn how blockchain and AI are shaping the future.</p>
+                <a href="blockchain-ai.html" class="btn btn-primary">Learn More</a>
+            </div>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="row mt-5" id="contactMe">
+            <div class="col-md-6">
+                <h2>Contact Me</h2>
+
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea class="form-control" id="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+
+            <div class="col-md-4 d-flex flex-column align-items-center justify-content-center text-center">
+                <h4 class="mb-3 text-primary font-weight-bold">Connect with me:</h4>
+                <div class="social-links d-flex justify-content-center">
+                    <a href="https://www.linkedin.com/in/amresh-sharma-8708b0192/" target="_blank"
+                        class="social-icon linkedin">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/AmreshSharma01" target="_blank" class="social-icon github">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://x.com/aks_amresh37" target="_blank" class="social-icon twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.facebook.com/amreshsharma086" target="_blank" class="social-icon facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Footer -->
+        <footer class="text-black-50 text-center py-4 mt-5">
+            <p>&copy; 2025 Amresh Sharma. All rights reserved.</p>
+        </footer>
+
+
+        <!-- Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>

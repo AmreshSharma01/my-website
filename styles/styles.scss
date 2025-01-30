@@ -1,0 +1,161 @@
+// SCSS Variables
+$primary-color: hsl(250, 69%, 61%); // Updated primary color
+$secondary-color: #2ecc71;
+$font-stack: 'Arial', sans-serif;
+$text-color: #333;
+$background-color: #f9f9f9;
+
+// SCSS Nesting
+body {
+    font-family: $font-stack;
+    color: $text-color;
+    background-color: $background-color;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+// Centered Container
+.centered-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px; // Add padding to prevent content from touching edges
+}
+
+// Custom Navigation Bar
+.custom-navbar {
+    background-color: rgb(191, 199, 218);
+    padding: 10px 20px; // Add padding to the sides
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    margin: 20px 0; // Add margin for spacing
+
+    .navbar-brand {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: $primary-color;
+    }
+
+    .navbar-nav {
+        .nav-item {
+            margin-left: 15px;
+
+            .nav-link {
+                color: $text-color;
+                font-weight: 500;
+                transition: color 0.3s ease;
+
+                &:hover {
+                    color: $primary-color;
+                }
+            }
+
+            &.active .nav-link {
+                color: $primary-color;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+// ID Selector
+#contactMe {
+    background-color: $background-color;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+
+    h2 {
+        color: $primary-color;
+    }
+}
+
+// Mobile Responsive Query
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    .custom-navbar {
+        padding: 10px; // Adjust padding for smaller screens
+        .navbar-nav {
+            .nav-item {
+                margin-left: 0;
+                text-align: center;
+            }
+        }
+    }
+}
+
+// Table Styling
+.table {
+    width: 100%;
+    margin-bottom: 20px;
+
+    th, td {
+        padding: 10px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+
+    th {
+        background-color: $primary-color;
+        color: white;
+    }
+}
+
+// SCSS Inheritance
+%box-style {
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.container {
+    @extend %box-style;
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto; // Center the container
+}
+
+// css styling for social links 
+
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icon {
+    font-size: 2rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+    text-decoration: none;
+}
+
+.linkedin { color: #0077b5; }
+.github { color: #333; }
+.twitter { color: #1da1f2; }
+.facebook { color: #1877f2; }
+
+.social-icon:hover {
+    transform: scale(1.2);
+}
+
+.linkedin:hover { color: #005582; }
+.github:hover { color: #000; }
+.twitter:hover { color: #0d8dd9; }
+.facebook:hover { color: #1256a4; }
+
+//styling for profile image
+
+.profile-img {
+    width: 250px;  /* Customize width */
+    height: 250px; /* Customize height */
+    object-fit: cover; /* Ensures the image maintains proportions */
+
+}
