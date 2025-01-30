@@ -7,9 +7,9 @@ $background-color: #f9f9f9;
 
 // Global Styles
 body {
-    font-family: $font-stack;
-    color: $text-color;
-    background-color: $background-color;
+    font-family: $font-stack; // Using SCSS variable for font family
+    color: $text-color; // Using SCSS variable for text color
+    background-color: $background-color; // Using SCSS variable for background color
     margin: 0;
     padding: 0;
     display: flex;
@@ -35,10 +35,11 @@ body {
     width: 100%;
     margin: 20px 0;
 
+    // Example of SCSS nesting: Styling child elements of .custom-navbar
     .navbar-brand {
         font-size: 1.5rem;
         font-weight: bold;
-        color: $primary-color;
+        color: $primary-color; // Using SCSS variable for color
     }
 
     .navbar-nav {
@@ -46,17 +47,17 @@ body {
             margin-left: 15px;
 
             .nav-link {
-                color: $text-color;
+                color: $text-color; // Using SCSS variable for color
                 font-weight: 500;
                 transition: color 0.3s ease;
 
                 &:hover {
-                    color: $primary-color;
+                    color: $primary-color; // Using SCSS variable for hover color
                 }
             }
 
             &.active .nav-link {
-                color: $primary-color;
+                color: $primary-color; // Using SCSS variable for active link color
                 font-weight: bold;
             }
         }
@@ -65,13 +66,13 @@ body {
 
 // Contact Section
 #contactMe {
-    background-color: $background-color;
+    background-color: $background-color; // Using SCSS variable for background color
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin-top: 30px;
 
     h2 {
-        color: $primary-color;
+        color: $primary-color; // Using SCSS variable for heading color
     }
 }
 
@@ -87,7 +88,7 @@ body {
     }
 
     th {
-        background-color: $primary-color;
+        background-color: $primary-color; // Using SCSS variable for background color
         color: white;
     }
 }
@@ -101,7 +102,7 @@ body {
 }
 
 .container {
-    @extend %box-style;
+    @extend %box-style; // Example of SCSS inheritance: Extending %box-style
     width: 100%;
     max-width: 1200px;
     margin: 20px auto;
@@ -112,6 +113,7 @@ body {
     display: flex;
     gap: 15px;
 
+    // Example of SCSS nesting: Styling child elements of .social-links
     .social-icon {
         font-size: 2rem;
         transition: transform 0.3s ease, color 0.3s ease;
@@ -144,6 +146,7 @@ body {
 .numbered-list, .bulleted-list {
     padding-left: 40px;
 
+    // Example of SCSS nesting: Styling child elements of .numbered-list and .bulleted-list
     .list-group-item {
         display: list-item;
     }
@@ -166,6 +169,7 @@ body {
     .custom-navbar {
         padding: 10px;
 
+        // Example of SCSS nesting: Styling child elements of .custom-navbar for mobile
         .navbar-nav {
             .nav-item {
                 margin-left: 0;
