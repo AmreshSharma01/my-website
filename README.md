@@ -6,6 +6,10 @@ ENGO 551 - Adv. Topics on Geospatial Technologies
 
 This is my portfolio website showcasing my background, skills, and interests. It includes four pages: Home, About Me, Interests and Blockchain & AI.
 
+## Live Demo
+You can view the live version of this website here:  
+🔗 [My Portfolio Website](https://amreshsharma01.github.io/my-website/)
+
 ## Features
 - **Responsive Design:** The website is mobile-friendly and uses Bootstrap for layout and styling.
 - **SCSS Styling:** Custom SCSS is used for styling, including variables, nesting, and inheritance.
