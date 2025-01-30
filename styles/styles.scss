@@ -5,7 +5,7 @@ $font-stack: 'Arial', sans-serif;
 $text-color: #333;
 $background-color: #f9f9f9;
 
-// SCSS Nesting
+// Global Styles
 body {
     font-family: $font-stack;
     color: $text-color;
@@ -18,22 +18,22 @@ body {
     min-height: 100vh;
 }
 
-// Centered Container
+// Utility Classes
 .centered-container {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px; // Add padding to prevent content from touching edges
+    padding: 0 20px;
 }
 
-// Custom Navigation Bar
+// Navigation Bar
 .custom-navbar {
     background-color: rgb(191, 199, 218);
-    padding: 10px 20px; // Add padding to the sides
+    padding: 10px 20px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 100%;
-    margin: 20px 0; // Add margin for spacing
+    margin: 20px 0;
 
     .navbar-brand {
         font-size: 1.5rem;
@@ -63,7 +63,7 @@ body {
     }
 }
 
-// ID Selector
+// Contact Section
 #contactMe {
     background-color: $background-color;
     border-radius: 10px;
@@ -72,23 +72,6 @@ body {
 
     h2 {
         color: $primary-color;
-    }
-}
-
-// Mobile Responsive Query
-@media (max-width: 768px) {
-    body {
-        font-size: 14px;
-    }
-
-    .custom-navbar {
-        padding: 10px; // Adjust padding for smaller screens
-        .navbar-nav {
-            .nav-item {
-                margin-left: 0;
-                text-align: center;
-            }
-        }
     }
 }
 
@@ -109,7 +92,7 @@ body {
     }
 }
 
-// SCSS Inheritance
+// Box Style Inheritance
 %box-style {
     padding: 20px;
     margin: 10px;
@@ -121,41 +104,73 @@ body {
     @extend %box-style;
     width: 100%;
     max-width: 1200px;
-    margin: 20px auto; // Center the container
+    margin: 20px auto;
 }
 
-// css styling for social links 
-
+// Social Links
 .social-links {
     display: flex;
     gap: 15px;
+
+    .social-icon {
+        font-size: 2rem;
+        transition: transform 0.3s ease, color 0.3s ease;
+        text-decoration: none;
+
+        &.linkedin { color: #0077b5; }
+        &.github { color: #333; }
+        &.twitter { color: #1da1f2; }
+        &.facebook { color: #1877f2; }
+
+        &:hover {
+            transform: scale(1.2);
+
+            &.linkedin { color: #005582; }
+            &.github { color: #000; }
+            &.twitter { color: #0d8dd9; }
+            &.facebook { color: #1256a4; }
+        }
+    }
 }
 
-.social-icon {
-    font-size: 2rem;
-    transition: transform 0.3s ease, color 0.3s ease;
-    text-decoration: none;
-}
-
-.linkedin { color: #0077b5; }
-.github { color: #333; }
-.twitter { color: #1da1f2; }
-.facebook { color: #1877f2; }
-
-.social-icon:hover {
-    transform: scale(1.2);
-}
-
-.linkedin:hover { color: #005582; }
-.github:hover { color: #000; }
-.twitter:hover { color: #0d8dd9; }
-.facebook:hover { color: #1256a4; }
-
-//styling for profile image
-
+// Profile Image
 .profile-img {
-    width: 250px;  /* Customize width */
-    height: 250px; /* Customize height */
-    object-fit: cover; /* Ensures the image maintains proportions */
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
 
+// List Styling
+.numbered-list, .bulleted-list {
+    padding-left: 40px;
+
+    .list-group-item {
+        display: list-item;
+    }
+}
+
+.numbered-list {
+    list-style-type: decimal;
+}
+
+.bulleted-list {
+    list-style-type: disc;
+}
+
+// Mobile Responsive Styles
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    .custom-navbar {
+        padding: 10px;
+
+        .navbar-nav {
+            .nav-item {
+                margin-left: 0;
+                text-align: center;
+            }
+        }
+    }
 }
